@@ -175,7 +175,7 @@ window.addEventListener('DOMContentLoaded', () => {
           p.innerText = inputDescription.value;
           date.innerText = setDates();
           
-          // set ke null, supaya tidak menduplikat data lain saat ingin mengedit data lainnya
+          // set ke null, supaya tidak menduplikat data lain saat ingin mengedit data
           h3 = '';
           p = '';
           date = '';
