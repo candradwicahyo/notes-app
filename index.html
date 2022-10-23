@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.1/sweetalert2.css">
+  <title>notes app</title>
+</head>
+<body>
+
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md">
+
+        <div class="row">
+          <div class="col-md-7 mx-auto">
+            <div class="d-flex flex-column text-center">
+              <h1 class="fw-normal">Notes App</h1>
+              <p class="fw-light">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi aliquid deleniti necessitatibus assumenda voluptatum consequatur harum libero!
+              </p>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-outline-secondary py-2 px-3 rounded-1 modal-button my-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Create New Notes
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal modal-lg fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Add Data</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                  <label for="title" class="form-label">Title</label>
+                  <input type="text" class="form-control py-2 px-4 input-title" placeholder="enter title ...">
+                </div>
+                <div class="form-group">
+                  <label for="description" class="form-label">Descrption</label>
+                  <textarea cols="30" rows="10" class="form-control py-2 px-3 input-description" placeholder="Enter description in here ..."></textarea>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary rounded-1" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-outline-dark submit-button rounded-1">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ens of modal -->
+
+        <div class="row content">
+          <!-- content -->
+          <!--
+                    <div class="col-md-6">
+                      <div class="card m-1">
+                        <div class="card-body">
+                          <div class="h3 fw-normal my-auto">Hello World</div>
+                          <p class="fw-light my-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, ipsum, molestiae. Assumenda quisquam, vel perferendis aliquam, et eligendi.</p>
+                          <p class="fw-light my-2">oct, 20 2022</p>
+                          <div class="d-flex justify-content-end my-auto">
+                            <button class="btn btn-link">Edit</button>
+                            <button class="btn btn-link">Delete</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    -->
+          <!-- end of content -->
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.1/sweetalert2.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
